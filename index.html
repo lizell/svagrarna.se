@@ -48,6 +48,7 @@
     html {
       scroll-behavior: smooth;
       -webkit-text-size-adjust: 100%;
+      background: var(--navy);
     }
 
     body {
@@ -73,7 +74,13 @@
       z-index: 100;
       background: var(--navy);
       border-bottom: 3px solid var(--rust);
-      padding: var(--space-sm) var(--space-md);
+      padding: var(--space-md) var(--space-md);
+      transition: padding 0.3s ease;
+    }
+
+    .site-header.scrolled {
+      padding-top: var(--space-xs);
+      padding-bottom: var(--space-xs);
     }
 
     .header-inner {
@@ -93,19 +100,29 @@
     }
 
     .header-logo {
-      height: 48px;
+      height: 80px;
       width: auto;
       flex-shrink: 0;
       filter: brightness(0) invert(1);
+      transition: height 0.3s ease;
+    }
+
+    .site-header.scrolled .header-logo {
+      height: 44px;
     }
 
     .header-wordmark {
       font-family: var(--font-body);
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       font-weight: 500;
       color: var(--white);
       letter-spacing: 0.12em;
       white-space: nowrap;
+      transition: font-size 0.3s ease;
+    }
+
+    .site-header.scrolled .header-wordmark {
+      font-size: 1.1rem;
     }
 
     .header-actions {
@@ -681,7 +698,7 @@
     }
 
     .footer-logo {
-      height: 36px;
+      height: 44px;
       width: auto;
       filter: brightness(0) invert(1);
       opacity: 0.6;
@@ -738,8 +755,10 @@
         padding: var(--space-sm) var(--space-xl);
       }
 
-      .header-logo { height: 56px; }
-      .header-wordmark { font-size: 1.35rem; }
+      .header-logo { height: 96px; }
+      .site-header.scrolled .header-logo { height: 48px; }
+      .header-wordmark { font-size: 1.9rem; }
+      .site-header.scrolled .header-wordmark { font-size: 1.2rem; }
     }
 
     @media (min-width: 1024px) {
@@ -750,6 +769,11 @@
 
     /* Touch target sizing for mobile */
     @media (max-width: 600px) {
+      .header-logo { height: 56px; }
+      .site-header.scrolled .header-logo { height: 36px; }
+      .header-wordmark { font-size: 1.5rem; }
+      .site-header.scrolled .header-wordmark { font-size: 1rem; }
+
       .btn-primary, .btn-secondary, .btn-call, .contact-cta-big {
         min-height: 48px;
       }
@@ -781,7 +805,7 @@
         <span class="header-wordmark">SVÅGRARNA</span>
       </a>
       <div class="header-actions">
-        <a href="tel:+46XXXXXXXXX" class="btn-call" aria-label="Ring oss">
+        <a href="#" class="btn-call phone-link" aria-label="Ring oss">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
           <span class="btn-label-short">Ring</span>
           <span class="btn-label-long">Ring oss</span>
@@ -800,7 +824,7 @@
           Bryggor, dykarbeten, eltoaletter, installationer och reparationer i Nynäshamn med omnejd&nbsp;&ndash; vi hjälper dig med det som behöver göras, även i miljöer där det krävs lite extra.
         </p>
         <div class="hero-cta-group">
-          <a href="tel:+46XXXXXXXXX" class="btn-primary">
+          <a href="#" class="btn-primary phone-link">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
             Ring oss direkt
           </a>
@@ -922,7 +946,7 @@
         </div>
         <div class="problems-cta">
           <p>Har du ett problem som behöver lösas? Hör av dig.</p>
-          <a href="tel:+46XXXXXXXXX" class="btn-primary">
+          <a href="#" class="btn-primary phone-link">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
             Ring oss direkt
           </a>
@@ -987,13 +1011,13 @@
           Berätta kort vad du behöver hjälp med. Vi återkommer snabbt.
         </p>
         <div class="contact-methods">
-          <a href="tel:+46XXXXXXXXX" class="contact-card">
+          <a href="#" class="contact-card phone-link">
             <div class="contact-icon">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
             </div>
             <div>
               <div class="contact-card-label">Telefon</div>
-              <div class="contact-card-value">0XX-XXX XX XX</div>
+              <div class="contact-card-value phone-display"></div>
             </div>
           </a>
           <a href="mailto:info@svagrarna.se" class="contact-card">
@@ -1006,7 +1030,7 @@
             </div>
           </a>
         </div>
-        <a href="tel:+46XXXXXXXXX" class="contact-cta-big">
+        <a href="#" class="contact-cta-big phone-link">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
           Ring oss nu
         </a>
@@ -1020,9 +1044,9 @@
     <div class="footer-inner">
       <img src="sv%C3%A5grarna.svg" alt="Svågrarna AB" class="footer-logo">
       <div class="footer-info">
-        Svågrarna AB &middot; Org.nr XXX XXX-XXXX<br>
+        Svågrarna AB &middot; <span class="org-display"></span><br>
         <a href="mailto:info@svagrarna.se">info@svagrarna.se</a> &middot;
-        <a href="tel:+46XXXXXXXXX">0XX-XXX XX XX</a>
+        <a href="#" class="phone-link phone-display-inline"></a>
       </div>
     </div>
   </footer>
@@ -1030,6 +1054,50 @@
   <!-- ========== SCROLL REVEAL ========== -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      // Anti-scrape: assemble contact details from parts
+      var p = ['07','38','74','74','50'];
+      var ph = p.join('');
+      var phFmt = p[0]+p[1]+'-'+p[2]+p[3]+' '+p[4];
+      var phInt = '+46' + ph.substring(1);
+      var o = ['5595','79-','8058'];
+      var org = 'Org.nr ' + o.join('');
+
+      document.querySelectorAll('.phone-link').forEach(function(el) {
+        el.href = 'tel:' + phInt;
+      });
+      document.querySelectorAll('.phone-display').forEach(function(el) {
+        el.textContent = phFmt;
+      });
+      document.querySelectorAll('.phone-display-inline').forEach(function(el) {
+        el.textContent = phFmt;
+        el.href = 'tel:' + phInt;
+      });
+      document.querySelectorAll('.org-display').forEach(function(el) {
+        el.textContent = org;
+      });
+
+      // Shrink header on scroll with hysteresis to prevent flicker
+      var header = document.querySelector('.site-header');
+      var isScrolled = false;
+      var ticking = false;
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          requestAnimationFrame(function() {
+            var y = window.scrollY;
+            if (!isScrolled && y > 50) {
+              header.classList.add('scrolled');
+              isScrolled = true;
+            } else if (isScrolled && y < 10) {
+              header.classList.remove('scrolled');
+              isScrolled = false;
+            }
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+
+      // Scroll reveal
       var els = document.querySelectorAll('.fade-up');
       if (!('IntersectionObserver' in window)) {
         els.forEach(function (el) { el.classList.add('visible'); });
