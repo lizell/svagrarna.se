@@ -547,10 +547,9 @@
         <span class="header-wordmark">SVÅGRARNA</span>
       </a>
       <div class="header-actions">
-        <a href="#" class="btn-call phone-link" aria-label="Ring oss">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
-          <span class="btn-label-short">Ring</span>
-          <span class="btn-label-long">Ring oss</span>
+        <a href="/#kontakt" class="btn-call" aria-label="Kontakta oss">
+          <span class="btn-label-short">Kontakt</span>
+          <span class="btn-label-long">Kontakta oss</span>
         </a>
       </div>
     </div>
@@ -774,7 +773,6 @@
         <h2>Funderar du på en Cinderella, eller behöver service?</h2>
         <p>Vi är återförsäljare och certifierad servicetekniker i Nynäshamns skärgård. Hör av dig så hjälper vi dig.</p>
         <a href="/#kontakt" class="cta-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
           Kontakta oss
         </a>
       </div>
@@ -844,6 +842,7 @@
       <img src="/sv%C3%A5grarna.svg" alt="Svågrarna AB" class="footer-logo">
       <div class="footer-info">
         Svågrarna AB &middot; <span class="org-display"></span><br>
+        <a href="#" class="wa-link" target="_blank" rel="noopener">WhatsApp</a> &middot;
         <a href="mailto:info@svagrarna.se">info@svagrarna.se</a> &middot;
         <a href="#" class="phone-link phone-display-inline"></a>
       </div>
@@ -852,10 +851,11 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var p = ['07','38','74','74','50'];
+      var p = ['08','525','133','15'];
       var ph = p.join('');
-      var phFmt = p[0]+p[1]+'-'+p[2]+p[3]+' '+p[4];
+      var phFmt = p[0]+'-'+p[1]+' '+p[2]+' '+p[3];
       var phInt = '+46' + ph.substring(1);
+      var waUrl = 'https://wa.me/46' + ph.substring(1);
       var o = ['5595','79-','8058'];
       var org = 'Org.nr ' + o.join('');
 
@@ -868,6 +868,9 @@
       document.querySelectorAll('.phone-display-inline').forEach(function(el) {
         el.textContent = phFmt;
         el.href = 'tel:' + phInt;
+      });
+      document.querySelectorAll('.wa-link').forEach(function(el) {
+        el.href = waUrl;
       });
       document.querySelectorAll('.org-display').forEach(function(el) {
         el.textContent = org;
