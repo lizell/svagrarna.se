@@ -43,6 +43,8 @@
     },
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Degerholmens brygga",
+      "postalCode": "149 92",
       "addressLocality": "Nynäshamn",
       "addressRegion": "Stockholms län",
       "addressCountry": "SE"
@@ -781,6 +783,16 @@
     .contact-card-secondary .contact-card-value {
       font-size: 1rem;
     }
+    .contact-card-address {
+      align-items: flex-start;
+      grid-column: 1 / -1;
+    }
+    .contact-card-address .contact-card-note {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-top: 0.3rem;
+    }
 
     .contact-icon {
       flex-shrink: 0;
@@ -1299,6 +1311,16 @@
                 <div class="contact-card-value phone-display">08-525 133 15</div>
               </div>
             </a>
+            <div class="contact-card contact-card-secondary contact-card-address">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Adress</div>
+                <div class="contact-card-value">Degerholmens brygga, 149 92 Nynäshamn</div>
+                <p class="contact-card-note">Ring oss innan du kommer förbi, så ser vi till att vara på plats.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1312,6 +1334,7 @@
       <img src="sv%C3%A5grarna.svg" alt="Svågrarna AB" class="footer-logo">
       <div class="footer-info">
         Svågrarna AB &middot; <span class="org-display"></span><br>
+        Degerholmens brygga, 149 92 Nynäshamn<br>
         <a href="#" class="wa-link" target="_blank" rel="noopener">WhatsApp</a> &middot;
         <a href="mailto:info@svagrarna.se">info@svagrarna.se</a> &middot;
         <a href="#" class="phone-link phone-display-inline"></a>
