@@ -843,22 +843,19 @@
       <div class="footer-info">
         Svågrarna AB &middot; <span class="org-display"></span><br>
         Degerholmens brygga, 149 92 Nynäshamn<br>
-        <a href="#" class="wa-link" target="_blank" rel="noopener">WhatsApp</a> &middot;
+        <a href="https://wa.me/46852513315" class="wa-link" target="_blank" rel="noopener">WhatsApp</a> &middot;
         <a href="mailto:info@svagrarna.se">info@svagrarna.se</a> &middot;
-        <a href="#" class="phone-link phone-display-inline"></a>
+        <a href="tel:+46852513315" class="phone-link phone-display-inline">08-525 133 15</a>
       </div>
     </div>
   </footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var p = ['08','525','133','15'];
-      var ph = p.join('');
-      var phFmt = p[0]+'-'+p[1]+' '+p[2]+' '+p[3];
-      var phInt = '+46' + ph.substring(1);
-      var waUrl = 'https://wa.me/46' + ph.substring(1);
-      var o = ['5595','79-','8058'];
-      var org = 'Org.nr ' + o.join('');
+      var phFmt = '08-525 133 15';
+      var phInt = '+46852513315';
+      var waUrl = 'https://wa.me/46852513315';
+      var org = 'Org.nr 559579-8058';
 
       document.querySelectorAll('.phone-link').forEach(function(el) {
         el.href = 'tel:' + phInt;
