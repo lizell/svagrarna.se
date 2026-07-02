@@ -27,35 +27,81 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://svagrarna.se/#business",
     "name": "Svågrarna AB",
-    "description": "Dykuppdrag, bryggor, bojar, båtmotorservice, kaptenstjänster, transportpråm och Cinderella förbränningstoaletter (återförsäljare och certifierad servicetekniker) i Nynäshamns skärgård.",
-    "url": "https://svagrarna.se",
+    "url": "https://svagrarna.se/",
+    "image": "https://svagrarna.se/sv%C3%A5grarna.svg",
+    "logo": "https://svagrarna.se/sv%C3%A5grarna.svg",
     "email": "info@svagrarna.se",
-    "areaServed": {
-      "@type": "Place",
-      "name": "Nynäshamns skärgård"
+    "telephone": "+46 8 525 133 15",
+    "description": "Svågrarna AB utför dykuppdrag, brygg- och bojarbeten, båtmotorservice, kaptenstjänster, transportpråm och service av Cinderella förbränningstoaletter i Nynäshamns skärgård. Återförsäljare och certifierad servicetekniker för Cinderella.",
+    "slogan": "Vi löser det",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "organisationsnummer",
+      "value": "559579-8058"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nynäshamn",
+      "addressRegion": "Stockholms län",
+      "addressCountry": "SE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "58.8804596",
+      "longitude": "17.8364097"
+    },
+    "areaServed": [
+      { "@type": "Place", "name": "Nynäshamns skärgård" },
+      { "@type": "Place", "name": "Södra Stockholms skärgård" },
+      { "@type": "AdministrativeArea", "name": "Nynäshamns kommun" }
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Niklas Andersson",
+      "jobTitle": "Grundare",
+      "description": "Fartygsbefäl Klass 8, certifierad servicetekniker för Cinderella förbränningstoaletter."
     },
     "knowsAbout": [
-      "Dykuppdrag",
+      "Dykarbeten",
       "Bryggor och bojar",
+      "Förankring och förtöjning",
       "Båtmotorservice",
-      "Cinderella förbränningstoaletter",
-      "Transportpråm",
-      "Kaptenstjänster"
+      "Cinderella förbränningstoaletter"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Tjänster",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dykuppdrag", "description": "Professionella dykuppdrag – besiktning, reparation och underhåll av bryggor, fundament och undervattensutrustning." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bryggor & Bojar", "description": "Installation, reparation och underhåll av bryggor och bojar i skärgården." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Båtmotorservice", "description": "Service och reparation av utombordare och inombordare." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cinderella förbränningstoaletter", "description": "Försäljning, installation och service av Cinderella förbränningstoaletter. Återförsäljare och certifierad servicetekniker." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transportpråm", "description": "Lätt transportpråm med 900 kg lastkapacitet. Uthyrning med eller utan förare." } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kaptenstjänster", "description": "Erfaren befälhavare för uppdrag i skärgården. Fartygsbefäl Klass 8." } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dykuppdrag", "description": "Inspektion, reparation och montering under vattenytan. Förankringar och bottenarbeten." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bryggor & bojar", "description": "Installation, reparation och underhåll av bryggor och bojar i skärgården." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cinderella förbränningstoaletter", "description": "Försäljning, installation och service. Återförsäljare och certifierad servicetekniker." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Båt & motor", "description": "Service, reparation och felsökning av båtmotorer och tillbehör. Utombordare och inombordare." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kaptenstjänster", "description": "Erfaren befälhavare för kortare och längre uppdrag. Fartygsbefäl Klass 8." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transportpråm", "description": "Lätt transportpråm med 900 kg lastkapacitet och utombordare. Hyrs ut med eller utan förare." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparation & felsökning", "description": "Felsökning och reparation av mekanik och konstruktion." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Installationer", "description": "Montering och installation av teknik och konstruktioner i skärgården." } }
       ]
     },
     "inLanguage": "sv-SE"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://svagrarna.se/#faq",
+    "mainEntity": [
+      { "@type": "Question", "name": "Vad gör Svågrarna AB?", "acceptedAnswer": { "@type": "Answer", "text": "Vi utför dykuppdrag, brygg- och bojarbeten, båtmotorservice, kaptenstjänster, transportpråm och service av Cinderella förbränningstoaletter i Nynäshamns skärgård. Vi tar oss an jobb som andra säger nej till." } },
+      { "@type": "Question", "name": "Vilket område arbetar ni i?", "acceptedAnswer": { "@type": "Answer", "text": "Nynäshamns skärgård och kringliggande vatten i södra Stockholms skärgård. Vi är vana vid utsatta lägen och åker ut till öar dit andra inte tar sig." } },
+      { "@type": "Question", "name": "Är ni återförsäljare av Cinderella förbränningstoaletter?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Vi är återförsäljare och certifierad servicetekniker, vilket innebär att vi säljer, installerar och servar Cinderella. Toaletten fungerar utan vatten och avlopp – perfekt för stugor och platser utan avlopp." } },
+      { "@type": "Question", "name": "Kan man hyra transportpråm?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Vi hyr ut en lätt transportpråm med 900 kg lastkapacitet och utombordare, med eller utan förare – för transporter i skärgården." } },
+      { "@type": "Question", "name": "Utför ni dykuppdrag?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Vi gör inspektion, reparation och montering under vattenytan, samt förankringar och bottenarbeten. Vi dyker bland annat för att kontrollera och serva bojar och bryggor." } },
+      { "@type": "Question", "name": "Hur kontaktar man er och hur snabbt svarar ni?", "acceptedAnswer": { "@type": "Answer", "text": "Skriv på WhatsApp eller mejla info@svagrarna.se, eller ring 08-525 133 15 – bifoga gärna en bild. Vi svarar oftast inom någon timme på vardagar." } }
+    ]
   }
   </script>
 
@@ -793,6 +839,45 @@
     }
 
     /* ============================================
+       FAQ
+    ============================================ */
+    .faq {
+      padding: var(--space-3xl) var(--space-md);
+      background: var(--white);
+      border-top: 1px solid var(--sand-dark);
+    }
+
+    .faq-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-top: 1px solid var(--sand-dark);
+      padding: var(--space-lg) 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid var(--sand-dark);
+    }
+
+    .faq-item h3 {
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+      line-height: 1.4;
+    }
+
+    .faq-item p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ============================================
        FOOTER
     ============================================ */
     .site-footer {
@@ -1136,6 +1221,44 @@
       </div>
     </section>
 
+    <!-- ========== FAQ ========== -->
+    <section class="faq" id="faq" aria-labelledby="faq-rubrik">
+      <div class="faq-inner">
+        <div class="section-label">Vanliga frågor</div>
+        <h2 class="section-title" id="faq-rubrik">Frågor och svar</h2>
+
+        <div class="faq-item">
+          <h3>Vad gör Svågrarna AB?</h3>
+          <p>Vi utför dykuppdrag, brygg- och bojarbeten, båtmotorservice, kaptenstjänster, transportpråm och service av Cinderella förbränningstoaletter i Nynäshamns skärgård. Vi tar oss an jobb som andra säger nej till.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Vilket område arbetar ni i?</h3>
+          <p>Nynäshamns skärgård och kringliggande vatten i södra Stockholms skärgård. Vi är vana vid utsatta lägen och åker ut till öar dit andra inte tar sig.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Är ni återförsäljare av Cinderella förbränningstoaletter?</h3>
+          <p>Ja. Vi är återförsäljare och certifierad servicetekniker, vilket innebär att vi säljer, installerar och servar Cinderella. Toaletten fungerar utan vatten och avlopp – perfekt för stugor och platser utan avlopp.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Kan man hyra transportpråm?</h3>
+          <p>Ja. Vi hyr ut en lätt transportpråm med 900 kg lastkapacitet och utombordare, med eller utan förare – för transporter i skärgården.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Utför ni dykuppdrag?</h3>
+          <p>Ja. Vi gör inspektion, reparation och montering under vattenytan, samt förankringar och bottenarbeten. Vi dyker bland annat för att kontrollera och serva bojar och bryggor.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Hur kontaktar man er och hur snabbt svarar ni?</h3>
+          <p>Skriv på WhatsApp eller mejla info@svagrarna.se, eller ring 08-525 133 15 – bifoga gärna en bild. Vi svarar oftast inom någon timme på vardagar.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ========== CONTACT ========== -->
     <section class="contact" id="kontakt">
       <div class="contact-inner">
@@ -1167,13 +1290,13 @@
                 <div class="contact-card-value">info@svagrarna.se</div>
               </div>
             </a>
-            <a href="#" class="contact-card contact-card-secondary phone-link">
+            <a href="tel:+46852513315" class="contact-card contact-card-secondary phone-link">
               <div class="contact-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
               </div>
               <div>
                 <div class="contact-card-label">Telefon</div>
-                <div class="contact-card-value phone-display"></div>
+                <div class="contact-card-value phone-display">08-525 133 15</div>
               </div>
             </a>
           </div>
