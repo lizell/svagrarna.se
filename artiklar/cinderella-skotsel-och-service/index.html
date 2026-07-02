@@ -841,7 +841,7 @@
     <div class="footer-inner">
       <img src="/sv%C3%A5grarna.svg" alt="Svågrarna AB" class="footer-logo">
       <div class="footer-info">
-        Svågrarna AB &middot; <span class="org-display"></span><br>
+        Svågrarna AB &middot; Org.nr 559579-8058<br>
         Degerholmens brygga, 149 92 Nynäshamn<br>
         <a href="https://wa.me/46852513315" class="wa-link" target="_blank" rel="noopener">WhatsApp</a> &middot;
         <a href="mailto:info@svagrarna.se">info@svagrarna.se</a> &middot;
@@ -849,32 +849,5 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var phFmt = '08-525 133 15';
-      var phInt = '+46852513315';
-      var waUrl = 'https://wa.me/46852513315';
-      var org = 'Org.nr 559579-8058';
-
-      document.querySelectorAll('.phone-link').forEach(function(el) {
-        el.href = 'tel:' + phInt;
-      });
-      document.querySelectorAll('.phone-display').forEach(function(el) {
-        el.textContent = phFmt;
-      });
-      document.querySelectorAll('.phone-display-inline').forEach(function(el) {
-        el.textContent = phFmt;
-        el.href = 'tel:' + phInt;
-      });
-      document.querySelectorAll('.wa-link').forEach(function(el) {
-        el.href = waUrl;
-      });
-      document.querySelectorAll('.org-display').forEach(function(el) {
-        el.textContent = org;
-      });
-    });
-  </script>
-
 </body>
 </html>
