@@ -455,6 +455,23 @@
       line-height: 1.55;
     }
 
+    .service-card-links {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 0.45rem;
+      margin-top: 0.7rem;
+    }
+
+    .service-card-link {
+      color: var(--rust);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .service-card-link:hover { color: var(--rust-dark); }
+
     /* ============================================
        PROBLEMS SECTION
     ============================================ */
@@ -1078,7 +1095,10 @@
               <span style="font-size:0.65rem;font-weight:700;background:var(--rust);color:var(--white);padding:0.2rem 0.5rem;border-radius:3px;letter-spacing:0.06em;text-transform:uppercase;">Återförsäljare</span>
               <span style="font-size:0.65rem;font-weight:700;background:var(--rust);color:var(--white);padding:0.2rem 0.5rem;border-radius:3px;letter-spacing:0.06em;text-transform:uppercase;">Certifierad servicetekniker</span>
             </div>
-            <a href="artiklar/cinderella-skotsel-och-service/" style="display:inline-block;margin-top:0.6rem;font-size:0.8rem;font-weight:700;color:var(--rust);letter-spacing:0.02em;">Läs: Så sköter du din Cinderella →</a>
+            <div class="service-card-links">
+              <a href="artiklar/cinderella-skotsel-och-service/" class="service-card-link">Läs: Så sköter du din Cinderella →</a>
+              <a href="pages/reservdelar.html" class="service-card-link">Köp tillbehör →</a>
+            </div>
           </div>
 
           <div class="service-card fade-up">

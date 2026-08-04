@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Köp originaltillbehör och förbrukningsmaterial till Cinderella från Svågrarna AB. Säker betalning via Stripe.">
+  <title>Tillbehör till Cinderella – Svågrarna AB</title>
+  <link rel="canonical" href="https://svagrarna.se/pages/reservdelar.html">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tillbehör till Cinderella – Svågrarna AB">
+  <meta property="og:description" content="Originaltillbehör och förbrukningsmaterial till Cinderella. Säker betalning via Stripe.">
+  <meta property="og:url" content="https://svagrarna.se/pages/reservdelar.html">
+  <meta property="og:locale" content="sv_SE">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startsida",
+        "item": "https://svagrarna.se/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tillbehör",
+        "item": "https://svagrarna.se/pages/reservdelar.html"
+      }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --rust: #d4621a;
+      --rust-light: #e8854a;
+      --navy: #1a2634;
+      --navy-mid: #243545;
+      --slate-light: #8da4b8;
+      --sand: #f4f0eb;
+      --sand-dark: #e8e2d9;
+      --white: #fff;
+      --font-display: 'Instrument Serif', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { color-scheme: light; background: var(--navy); -webkit-text-size-adjust: 100%; }
+    body { margin: 0; color: var(--navy); background: var(--sand); font: 400 16px/1.6 var(--font-body); -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    .site-header {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      padding: 0.7rem 1rem;
+      color: var(--white);
+      background: var(--navy);
+      border-bottom: 3px solid var(--rust);
+    }
+
+    .header-inner, .shop-inner, .footer-inner { width: min(100% - 2rem, 1120px); margin-inline: auto; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .header-brand { display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; text-decoration: none; }
+    .header-logo { width: auto; height: 60px; flex-shrink: 0; filter: brightness(0) invert(1); }
+    .header-wordmark { color: var(--white); font-size: 1.2rem; font-weight: 500; letter-spacing: 0.12em; white-space: nowrap; }
+    .header-actions { display: flex; align-items: center; gap: 0.75rem; }
+    .btn-call { display: inline-flex; min-height: 48px; align-items: center; padding: 0.6rem 1.1rem; color: var(--white); background: var(--rust); border-radius: 6px; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.01em; text-decoration: none; transition: background 0.2s, transform 0.15s; white-space: nowrap; }
+    .btn-call:hover { background: #b8520f; }
+    .btn-call:active { transform: scale(0.97); }
+    .btn-call:focus-visible { outline: 3px solid var(--rust-light); outline-offset: 3px; }
+    .btn-label-long { display: none; }
+
+    @media (min-width: 480px) {
+      .btn-label-short { display: none; }
+      .btn-label-long { display: inline; }
+    }
+
+    .shop-hero { position: relative; overflow: hidden; padding: 4.5rem 0 5rem; color: var(--white); background: var(--navy); }
+    .shop-hero::after { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 95% at 90% 30%, rgba(212, 98, 26, 0.18), transparent 68%); content: ''; pointer-events: none; }
+    .shop-hero__content { position: relative; z-index: 1; max-width: 680px; }
+    .breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; margin: 0 0 2rem; color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--white); }
+    .breadcrumb a:focus-visible { outline: 2px solid var(--rust-light); outline-offset: 3px; }
+    .breadcrumb-sep { color: rgba(255,255,255,0.25); font-size: 0.7rem; user-select: none; }
+    .breadcrumb-current { color: rgba(255,255,255,0.7); }
+    .eyebrow { margin: 0 0 0.7rem; color: var(--rust-light); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; }
+    h1 { max-width: 11ch; margin: 0 0 1rem; font: 400 clamp(2.7rem, 9vw, 4.7rem)/0.98 var(--font-display); }
+    h1 em { color: var(--rust-light); font-weight: 400; }
+    .intro { max-width: 52ch; margin: 0; color: var(--slate-light); font-size: 1.05rem; }
+
+    .products { padding: 3.5rem 0 5rem; }
+    .products__heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; }
+    .products__heading h2 { margin: 0; font: 400 clamp(1.8rem, 5vw, 2.5rem)/1.1 var(--font-display); }
+    .products__heading p { margin: 0; color: #5a7186; font-size: 0.85rem; }
+    .pickup-notice { display: flex; align-items: flex-start; gap: 0.8rem; margin: 0 0 1.5rem; padding: 1rem 1.1rem; color: var(--navy); background: #fff; border-left: 3px solid var(--rust); border-radius: 6px; }
+    .pickup-notice svg { width: 22px; height: 22px; flex: 0 0 auto; margin-top: 0.1rem; color: var(--rust); }
+    .pickup-notice p { margin: 0; font-size: 0.92rem; line-height: 1.55; }
+    .pickup-notice strong { display: block; margin-bottom: 0.1rem; }
+    .product-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+    .status { padding: 2rem; color: #5a7186; background: var(--white); border: 1px solid var(--sand-dark); border-radius: 8px; }
+    .status--error { color: #822d18; border-color: #d7a08f; }
+
+    .purchase-note { padding: 2rem 0; color: var(--white); background: var(--navy-mid); }
+    .purchase-note .shop-inner { display: grid; gap: 1rem; }
+    .purchase-note h2 { margin: 0; font: 400 1.6rem/1.2 var(--font-display); }
+    .purchase-note p { max-width: 62ch; margin: 0; color: var(--slate-light); font-size: 0.92rem; }
+    .purchase-note a { color: var(--rust-light); font-weight: 700; }
+
+    .site-footer { padding: 1.75rem 0; color: rgba(255,255,255,.58); background: var(--navy); border-top: 3px solid var(--rust); }
+    .footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
+    .footer-inner img { width: auto; height: 52px; opacity: 0.6; filter: brightness(0) invert(1); }
+    .footer-inner p { margin: 0; font-size: 0.82rem; text-align: right; }
+
+    @media (min-width: 620px) {
+      .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .purchase-note .shop-inner { grid-template-columns: 0.7fr 1.3fr; align-items: center; }
+    }
+
+    @media (min-width: 940px) {
+      .site-header { padding-inline: 2rem; }
+      .header-inner, .shop-inner, .footer-inner { width: min(100% - 4rem, 1120px); }
+      .header-logo { height: 68px; }
+      .header-wordmark { font-size: 1.4rem; }
+      .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="header-brand" href="/" aria-label="Svågrarna AB, startsida">
+        <img src="/sv%C3%A5grarna.svg" alt="" class="header-logo">
+        <span class="header-wordmark">SVÅGRARNA</span>
+      </a>
+      <div class="header-actions">
+        <a href="/#kontakt" class="btn-call" aria-label="Kontakta oss">
+          <span class="btn-label-short">Kontakt</span>
+          <span class="btn-label-long">Kontakta oss</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="shop-hero">
+      <div class="shop-inner">
+        <div class="shop-hero__content">
+          <nav class="breadcrumb" aria-label="Brödsmulor">
+            <a href="/">Startsida</a>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            <span class="breadcrumb-current">Tillbehör</span>
+          </nav>
+          <p class="eyebrow">Cinderella originaldelar</p>
+          <h1>Tillbehör som <em>passar.</em></h1>
+          <p class="intro">Originaltillbehör och förbrukningsmaterial till din Cinderella. Varje vara betalas separat i Stripes säkra kassa.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" aria-labelledby="products-heading">
+      <div class="shop-inner">
+        <div class="products__heading">
+          <h2 id="products-heading">Alla produkter</h2>
+          <p>Priser inklusive moms</p>
+        </div>
+        <div class="pickup-notice" role="note" aria-label="Information om avhämtning">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.75 10.5 12 3l8.25 7.5M5.25 9.25v10.5h13.5V9.25M9 19.75v-6h6v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p><strong>Endast avhämtning</strong>Beställningar hämtas på Degerholmens brygga, 149 92 Nynäshamn. Vi skickar inga varor.</p>
+        </div>
+        <div id="product-grid" class="product-grid" aria-live="polite">
+          <p class="status">Laddar produkter …</p>
+        </div>
+      </div>
+    </section>
+
+    <aside class="purchase-note" aria-labelledby="safe-payment-heading">
+      <div class="shop-inner">
+        <h2 id="safe-payment-heading">Trygg betalning hos Stripe</h2>
+        <p>När du väljer Köp öppnas Stripes kassa i en ny flik. Betalning och kvitto hanteras helt av Stripe. Frågor om ett tillbehör? <a href="/#kontakt">Kontakta oss</a>.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img src="/sv%C3%A5grarna.svg" alt="Svågrarna AB">
+      <p>Svågrarna AB · Org.nr 559579-8058<br>Degerholmens brygga, 149 92 Nynäshamn</p>
+    </div>
+  </footer>
+
+  <script type="module">
+    import '/components/ProductCard.js';
+    import { loadPaymentLinks } from '/data/payment-config.js';
+
+    const grid = document.querySelector('#product-grid');
+
+    try {
+      const [productsResponse, paymentLinks] = await Promise.all([
+        fetch('/data/products.json'),
+        loadPaymentLinks(),
+      ]);
+
+      if (!productsResponse.ok) {
+        throw new Error('Product data could not be loaded');
+      }
+
+      const products = await productsResponse.json();
+
+      grid.replaceChildren();
+
+      if (products.length === 0) {
+        grid.innerHTML = '<p class="status">Inga produkter finns publicerade just nu.</p>';
+      } else {
+        products.forEach((product) => {
+          const card = document.createElement('product-card');
+          card.product = product;
+          card.checkoutUrl = paymentLinks[product.id] || '';
+          grid.append(card);
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      grid.innerHTML = '<p class="status status--error">Produkterna kunde inte laddas. Försök igen senare eller kontakta oss.</p>';
+    }
+  </script>
+</body>
+</html>
