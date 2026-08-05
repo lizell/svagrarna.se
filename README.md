@@ -2,6 +2,10 @@
 
 Webbplatsen är helt statisk och kan publiceras direkt på GitHub Pages. Tillbehörsbutiken använder Stripe Payment Links: webbplatsen visar produkterna, medan Stripe hanterar betalning, kunduppgifter och kvitto.
 
+## Styling
+
+Gemensamma färger, grundstilar, header, kontaktknapp och footer finns i `styles/site.css`. Sidunika regler ligger kvar i respektive HTML-fil. Produktkortets inkapslade komponentstil finns i `components/ProductCard.css`.
+
 ## Lägg till en produkt
 
 ### 1. Skapa produkten i Stripe

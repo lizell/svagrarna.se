@@ -35,52 +35,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/site.css">
   <style>
-    :root {
-      --rust: #d4621a;
-      --rust-light: #e8854a;
-      --navy: #1a2634;
-      --navy-mid: #243545;
-      --slate-light: #8da4b8;
-      --sand: #f4f0eb;
-      --sand-dark: #e8e2d9;
-      --white: #fff;
-      --font-display: 'Instrument Serif', Georgia, serif;
-      --font-body: 'DM Sans', system-ui, sans-serif;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; }
-    html { color-scheme: light; background: var(--navy); -webkit-text-size-adjust: 100%; }
-    body { margin: 0; color: var(--navy); background: var(--sand); font: 400 16px/1.6 var(--font-body); -webkit-font-smoothing: antialiased; }
-    a { color: inherit; }
-    img { display: block; max-width: 100%; }
-
-    .site-header {
-      position: sticky;
-      z-index: 10;
-      top: 0;
-      padding: 0.7rem 1rem;
-      color: var(--white);
-      background: var(--navy);
-      border-bottom: 3px solid var(--rust);
-    }
-
-    .header-inner, .shop-inner, .footer-inner { width: min(100% - 2rem, 1120px); margin-inline: auto; }
-    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-    .header-brand { display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; text-decoration: none; }
-    .header-logo { width: auto; height: 60px; flex-shrink: 0; filter: brightness(0) invert(1); }
-    .header-wordmark { color: var(--white); font-size: 1.2rem; font-weight: 500; letter-spacing: 0.12em; white-space: nowrap; }
-    .header-actions { display: flex; align-items: center; gap: 0.75rem; }
-    .btn-call { display: inline-flex; min-height: 48px; align-items: center; padding: 0.6rem 1.1rem; color: var(--white); background: var(--rust); border-radius: 6px; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.01em; text-decoration: none; transition: background 0.2s, transform 0.15s; white-space: nowrap; }
-    .btn-call:hover { background: #b8520f; }
-    .btn-call:active { transform: scale(0.97); }
-    .btn-call:focus-visible { outline: 3px solid var(--rust-light); outline-offset: 3px; }
-    .btn-label-long { display: none; }
-
-    @media (min-width: 480px) {
-      .btn-label-short { display: none; }
-      .btn-label-long { display: inline; }
-    }
+    .shop-inner { width: min(100% - 2rem, 1120px); margin-inline: auto; }
 
     .shop-hero { position: relative; overflow: hidden; padding: 4.5rem 0 5rem; color: var(--white); background: var(--navy); }
     .shop-hero::after { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 95% at 90% 30%, rgba(212, 98, 26, 0.18), transparent 68%); content: ''; pointer-events: none; }
@@ -114,28 +71,20 @@
     .purchase-note p { max-width: 62ch; margin: 0; color: var(--slate-light); font-size: 0.92rem; }
     .purchase-note a { color: var(--rust-light); font-weight: 700; }
 
-    .site-footer { padding: 1.75rem 0; color: rgba(255,255,255,.58); background: var(--navy); border-top: 3px solid var(--rust); }
-    .footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
-    .footer-inner img { width: auto; height: 52px; opacity: 0.6; filter: brightness(0) invert(1); }
-    .footer-inner p { margin: 0; font-size: 0.82rem; text-align: right; }
-
     @media (min-width: 620px) {
       .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .purchase-note .shop-inner { grid-template-columns: 0.7fr 1.3fr; align-items: center; }
     }
 
     @media (min-width: 940px) {
-      .site-header { padding-inline: 2rem; }
-      .header-inner, .shop-inner, .footer-inner { width: min(100% - 4rem, 1120px); }
-      .header-logo { height: 68px; }
-      .header-wordmark { font-size: 1.4rem; }
+      .shop-inner { width: min(100% - 4rem, 1120px); }
       .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     }
 
     @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
   </style>
 </head>
-<body>
+<body class="page-sand">
   <header class="site-header">
     <div class="header-inner">
       <a class="header-brand" href="/" aria-label="Svågrarna AB, startsida">
@@ -193,8 +142,8 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <img src="/sv%C3%A5grarna.svg" alt="Svågrarna AB">
-      <p>Svågrarna AB · Org.nr 559579-8058<br>Degerholmens brygga, 149 92 Nynäshamn</p>
+      <img src="/sv%C3%A5grarna.svg" alt="Svågrarna AB" class="footer-logo">
+      <p class="footer-info">Svågrarna AB · Org.nr 559579-8058<br>Degerholmens brygga, 149 92 Nynäshamn</p>
     </div>
   </footer>
 

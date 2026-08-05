@@ -75,73 +75,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/site.css">
 
   <style>
-    :root {
-      --rust: #d4621a;
-      --rust-dark: #b8520f;
-      --rust-light: #e8854a;
-      --navy: #1a2634;
-      --navy-mid: #243545;
-      --navy-light: #2e4356;
-      --slate: #5a7186;
-      --slate-light: #8da4b8;
-      --sand: #f4f0eb;
-      --sand-dark: #e8e2d9;
-      --white: #ffffff;
-      --text: #1a2634;
-      --text-light: #5a7186;
-      --text-body: #3d4f5f;
-
-      --font-display: 'Instrument Serif', Georgia, serif;
-      --font-body: 'DM Sans', system-ui, sans-serif;
-    }
-
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; background: var(--navy); }
-    body { font-family: var(--font-body); color: var(--text); background: var(--sand); line-height: 1.6; font-size: 16px; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-    img, svg { display: block; max-width: 100%; }
-    a { color: inherit; text-decoration: none; }
-    button { font-family: inherit; cursor: pointer; border: none; }
-
-    /* ============================================
-       HEADER — matches main site (compact variant)
-    ============================================ */
-    .site-header {
-      position: sticky; top: 0; z-index: 100;
-      background: var(--navy);
-      border-bottom: 3px solid var(--rust);
-      padding: 0.75rem 1rem;
-    }
-    .header-inner {
-      max-width: 1120px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
-    }
-    .header-brand { display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; }
-    .header-logo { height: 60px; width: auto; flex-shrink: 0; filter: brightness(0) invert(1); }
-    .header-wordmark {
-      font-family: var(--font-body); font-size: 1.2rem; font-weight: 500;
-      color: var(--white); letter-spacing: 0.12em; white-space: nowrap;
-    }
-    .btn-call {
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      background: var(--rust); color: var(--white);
-      font-weight: 700; font-size: 0.9rem;
-      padding: 0.6rem 1.1rem; border-radius: 6px;
-      letter-spacing: 0.01em;
-      transition: background 0.2s, transform 0.15s;
-      white-space: nowrap;
-    }
-    .btn-call:hover { background: var(--rust-dark); }
-    .btn-call:active { transform: scale(0.97); }
-    .btn-call svg { width: 18px; height: 18px; flex-shrink: 0; }
-    .header-actions { display: flex; align-items: center; gap: 0.75rem; }
-    .btn-call .btn-label-long { display: none; }
-    @media (min-width: 480px) {
-      .btn-call .btn-label-short { display: none; }
-      .btn-call .btn-label-long { display: inline; }
-    }
-
     /* ============================================
        ARTICLE HERO — navy block with breadcrumb inside
     ============================================ */
@@ -474,48 +410,17 @@
     }
 
     /* ============================================
-       FOOTER — matches main site
-    ============================================ */
-    .site-footer {
-      background: var(--navy);
-      color: rgba(255,255,255,0.5);
-      padding: 1.5rem 1rem;
-      border-top: 3px solid var(--rust);
-    }
-    .footer-inner {
-      max-width: 1120px; margin: 0 auto;
-      display: flex; flex-wrap: wrap;
-      justify-content: space-between; align-items: center;
-      gap: 1rem;
-    }
-    .footer-logo { height: 56px; width: auto; filter: brightness(0) invert(1); opacity: 0.6; }
-    .footer-info { font-size: 0.85rem; text-align: right; }
-    .footer-info a { color: rgba(255,255,255,0.7); transition: color 0.2s; }
-    .footer-info a:hover { color: var(--white); }
-
-    /* ============================================
        RESPONSIVE
     ============================================ */
     @media (min-width: 768px) {
-      .site-header { padding: 0.75rem 2rem; }
-      .header-logo { height: 68px; }
-      .header-wordmark { font-size: 1.4rem; }
       .article-hero { padding: 2.5rem 2rem 3.5rem; }
       .article-body { padding: 3rem 2.5rem 3.5rem; margin-top: -2rem; }
       .summary-box { padding: 2rem 2.5rem; }
       .article-cta { padding: 3rem 2.5rem; }
     }
-
-    @media (max-width: 600px) {
-      .btn-call { min-height: 48px; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-    }
   </style>
 </head>
-<body>
+<body class="page-sand">
 
   <!-- Header — samma som huvudsidan -->
   <header class="site-header">
